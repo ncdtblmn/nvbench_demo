@@ -5,9 +5,9 @@ git clone https://github.com/NVIDIA/nvbench_demo.git
 
 cd nvbench_demo
 
-cmake -DCMAKE_CUDA_ARCHITECTURES=native .
+cmake -S . -B build
 
-make
+cmake --build build
 
-./example_bench
+./build/example_bench
 ```
